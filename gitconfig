@@ -1,0 +1,13 @@
+[user]
+	name = Dan K.
+	email = itsdanya@gmail.com
+[core]
+	editor = atom
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+	lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[push]
+	default = simple
