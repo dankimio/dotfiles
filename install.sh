@@ -2,7 +2,7 @@
 dir="$HOME/Developer/dotfiles"
 cd $dir
 
-files="gemrc gitconfig zshrc"
+files="gemrc gitconfig hushlogin irbrc pryrc zpreztorc zshrc"
 for file in $files; do
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file ~/.$file
