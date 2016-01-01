@@ -12,7 +12,7 @@ done
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew install rbenv ruby-build
-brew install git zsh nvm
+brew install git zsh
 brew install imagemagick
 brew install postgresql
 brew install ssh-copy-id
@@ -28,10 +28,11 @@ brew cask install font-fira-mono font-open-sans
 
 # rbenv plugins
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-git clone https://github.com/garnieretienne/rvm-download.git ~/.rbenv/plugins/rvm-download
 
 # Ruby
-rbenv download 2.2.3
+rbenv install 2.3.0
+rbenv global 2.3.0
+gem install bundler rails jekyll pry
 
-# Generate SSH
-# ssh-keygen
+# Generate SSH key
+ssh-keygen -N ''
