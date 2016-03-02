@@ -26,9 +26,6 @@ brew cask install heroku-toolbelt
 brew tap caskroom/fonts
 brew cask install font-fira-mono font-open-sans
 
-# rbenv plugins
-git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-
 # Ruby
 rbenv install 2.3.0
 rbenv global 2.3.0
