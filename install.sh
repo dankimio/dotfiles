@@ -27,8 +27,8 @@ brew tap caskroom/fonts
 brew cask install font-fira-mono font-open-sans
 
 # Ruby
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.3.1
+rbenv global 2.3.1
 gem install bundler rails jekyll pry
 
 # Generate SSH key
