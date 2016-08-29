@@ -24,7 +24,7 @@ brew cask install dropbox flux vlc
 brew cask install heroku-toolbelt
 
 brew tap caskroom/fonts
-brew cask install font-fira-mono font-open-sans
+brew cask install font-fira-mono font-open-sans font-liberation-sans
 
 # Ruby
 rbenv install 2.3.1
