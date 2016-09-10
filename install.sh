@@ -2,7 +2,7 @@
 dir="$HOME/Developer/dotfiles"
 cd $dir
 
-files="gemrc gitconfig hushlogin irbrc pryrc zpreztorc zshrc"
+files="gemrc gitconfig hushlogin irbrc pryrc rubocop.yml zpreztorc zshrc"
 for file in $files; do
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file ~/.$file
@@ -29,7 +29,7 @@ brew cask install font-fira-mono font-open-sans font-liberation-sans
 # Ruby
 rbenv install 2.3.1
 rbenv global 2.3.1
-gem install bundler rails jekyll pry
+gem install bundler rails jekyll pry rubocop
 
 # Generate SSH key
 ssh-keygen -N ''

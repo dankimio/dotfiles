@@ -1,0 +1,16 @@
+AllCops:
+  TargetRubyVersion: 2.3
+Metrics/LineLength:
+  Max: 100
+Style/Documentation:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/SingleLineBlockParams:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
