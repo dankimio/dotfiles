@@ -14,8 +14,3 @@ chmod +x install.sh
 
 # Install using the script
 ./install.sh
-
-# The rest
-rbenv install 2.2.2
-gem install rails
-```
