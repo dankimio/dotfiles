@@ -2,7 +2,7 @@
 	name = Dan Kim
 	email = itsdanya@gmail.com
 [core]
-	editor = vim
+	editor = nano
 [alias]
   co = checkout
   ci = commit
