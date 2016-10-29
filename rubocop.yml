@@ -14,3 +14,5 @@ Style/SingleLineBlockParams:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
+Style/AsciiComments:
+  Enabled: false
