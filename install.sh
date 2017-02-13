@@ -16,20 +16,21 @@ brew install git zsh
 brew install imagemagick
 brew install postgresql
 brew install ssh-copy-id
+brew install heroku
 
 # Caskroom
 brew install caskroom/cask/brew-cask
-brew cask install atom paw postgres gitup cyberduck
+brew cask install atom paw postgres gitup
 brew cask install dropbox flux vlc
-brew cask install heroku-toolbelt
 
 brew tap caskroom/fonts
 brew cask install font-fira-mono font-open-sans font-liberation-sans
 
 # Ruby
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.4.0
+rbenv global 2.4.0
 gem install bundler rails jekyll pry rubocop
+gem install fastlane cocoapods
 
 # Generate SSH key
 ssh-keygen -N ''
