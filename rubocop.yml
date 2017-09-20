@@ -1,5 +1,12 @@
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
+  Excludes:
+    - bin/*
+    - db/**/*
+    - config/puma.rb
+    - config/spring.rb
+    - config/environments/*
+    - config/initializers/*
 Metrics/LineLength:
   Max: 100
 Style/Documentation:
@@ -15,4 +22,10 @@ Style/SingleLineBlockParams:
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/AsciiComments:
+  Enabled: false
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/MultilineMethodCallIndentation:
+  Enabled: false
+Style/IndentHeredoc:
   Enabled: false
