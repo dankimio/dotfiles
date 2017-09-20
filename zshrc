@@ -17,3 +17,9 @@ fi
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# OpenSSL
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# CocoaPods
+export COCOAPODS_DISABLE_STATS=true
