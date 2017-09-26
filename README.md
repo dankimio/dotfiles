@@ -1,4 +1,5 @@
 # Dotfiles
+
 ## Install
 
 ```bash
@@ -6,7 +7,7 @@
 xcode-select --install
 
 # Clone dotfiles repo and change directory
-git clone https://github.com/itsdan/dotfiles.git ~/Developer/dotfiles
+git clone https://github.com/dankimio/dotfiles.git ~/Developer/dotfiles
 cd ~/Developer/dotfiles
 
 # Make executable
