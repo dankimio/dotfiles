@@ -10,9 +10,6 @@ xcode-select --install
 git clone https://github.com/dankimio/dotfiles.git ~/Developer/dotfiles
 cd ~/Developer/dotfiles
 
-# Make executable
-chmod +x install.sh
-
 # Install using the script
 ./install.sh
 ```
