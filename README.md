@@ -17,3 +17,14 @@ cd ~/Developer/dotfiles
 ## Screenshot
 
 ![Screenshot](screenshot.png)
+
+## What's included
+
+- [Homebrew](https://brew.sh/)
+- Ruby 2.4 managed by [rbenv](https://github.com/rbenv/rbenv)
+- Gems for development: Rails, Jekyll, Bundler, etc.
+- Zsh with [Prezto](https://github.com/sorin-ionescu/prezto)
+- Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
+- Apps: [Atom](https://atom.io/), [Paw](https://paw.cloud/), [Postgres.app](https://postgresapp.com/), and many other (customize in `install.sh`)
+- [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts)
+- SSH key generation
