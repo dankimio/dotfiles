@@ -15,3 +15,8 @@ chmod +x install.sh
 
 # Install using the script
 ./install.sh
+```
+
+## Screenshot
+
+![Screenshot](screenshot.png)
