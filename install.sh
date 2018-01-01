@@ -25,8 +25,8 @@ brew cask install dropbox iina
 brew tap caskroom/fonts
 
 # Ruby
-rbenv install 2.4.2
-rbenv global 2.4.2
+rbenv install 2.5.0
+rbenv global 2.5.0
 gem install bundler rails jekyll pry rubocop
 gem install fastlane cocoapods
 
