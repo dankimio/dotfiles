@@ -1,12 +1,16 @@
 AllCops:
   TargetRubyVersion: 2.4
-  Excludes:
+  Exclude:
     - bin/*
     - db/**/*
     - config/puma.rb
     - config/spring.rb
     - config/environments/*
     - config/initializers/*
+Layout/IndentHeredoc:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
 Metrics/LineLength:
   Max: 100
 Style/Documentation:
@@ -25,7 +29,3 @@ Style/AsciiComments:
   Enabled: false
 Style/EmptyMethod:
   EnforcedStyle: expanded
-Style/MultilineMethodCallIndentation:
-  Enabled: false
-Style/IndentHeredoc:
-  Enabled: false
