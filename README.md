@@ -3,7 +3,7 @@
 ## What's included
 
 - [Homebrew](https://brew.sh/)
-- Ruby 2.4 managed by [rbenv](https://github.com/rbenv/rbenv)
+- Ruby 2.5 managed by [rbenv](https://github.com/rbenv/rbenv)
 - Gems for development: Rails, Jekyll, Bundler, etc.
 - Zsh with [Prezto](https://github.com/sorin-ionescu/prezto)
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
