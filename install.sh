@@ -19,14 +19,15 @@ brew install ssh-copy-id
 brew install heroku
 
 # Caskroom
-brew cask install atom paw postgres gitup
-brew cask install dropbox iina
+brew cask install 1password atom dash dropbox firefox gitup gitup google-chrome iina paw postgres sublime-text transmission tunnelbear
 
+# Fonts
 brew tap caskroom/fonts
+brew install font-fira-mono font-open-sans font-roboto font-roboto-mono
 
 # Ruby
-rbenv install 2.5.0
-rbenv global 2.5.0
+rbenv install 2.5.1
+rbenv global 2.5.1
 gem install bundler rails jekyll pry rubocop
 gem install fastlane cocoapods
 
