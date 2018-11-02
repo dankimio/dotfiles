@@ -10,13 +10,8 @@ done
 
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-brew install rbenv ruby-build
-brew install git zsh
-brew install imagemagick
-brew install postgresql
-brew install ssh-copy-id
-brew install heroku
+
+brew install git heroku imagemagick node openssl postgresql rbenv ruby-build ssh-copy-id unrar yarn zsh
 
 # Caskroom
 brew cask install 1password atom dash dropbox firefox gitup gitup google-chrome iina paw postgres sublime-text transmission tunnelbear
