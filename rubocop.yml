@@ -1,31 +1,29 @@
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
   Exclude:
     - bin/*
     - db/**/*
-    - config/puma.rb
-    - config/spring.rb
-    - config/environments/*
-    - config/initializers/*
 Layout/IndentHeredoc:
   Enabled: false
 Layout/MultilineMethodCallIndentation:
   Enabled: false
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
 Metrics/LineLength:
   Max: 100
-Style/Documentation:
-  Enabled: false
-Style/NumericLiterals:
-  Enabled: false
-Style/MutableConstant:
-  Enabled: false
-Style/FrozenStringLiteralComment:
-  Enabled: false
-Style/SingleLineBlockParams:
+Style/AsciiComments:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
-Style/AsciiComments:
+Style/Documentation:
   Enabled: false
 Style/EmptyMethod:
   EnforcedStyle: expanded
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/SingleLineBlockParams:
+  Enabled: false
