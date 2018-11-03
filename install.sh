@@ -21,10 +21,9 @@ brew tap caskroom/fonts
 brew install font-fira-mono font-open-sans font-roboto font-roboto-mono
 
 # Ruby
-rbenv install 2.5.1
-rbenv global 2.5.1
+rbenv install 2.5.3
+rbenv global 2.5.3
 gem install bundler rails jekyll pry rubocop
-gem install fastlane cocoapods
 
 # Generate SSH key
 ssh-keygen -N ''
