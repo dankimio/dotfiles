@@ -12,9 +12,8 @@ done
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Ruby
-rbenv install 2.5.3
-rbenv global 2.5.3
-gem install bundler rails jekyll pry rubocop
+rbenv install 2.6.5
+rbenv global 2.6.5
 
 # Generate SSH key
 ssh-keygen -N ''
