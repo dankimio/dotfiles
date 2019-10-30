@@ -11,15 +11,6 @@ done
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install git imagemagick node openssl postgresql rbenv ssh-copy-id unrar yarn zsh
-
-# Caskroom
-brew cask install 1password atom dash dropbox firefox gitup google-chrome iina paw postgres sublime-text transmission tunnelbear
-
-# Fonts
-brew tap caskroom/fonts
-brew cask install font-fira-mono font-open-sans font-roboto font-roboto-mono
-
 # Ruby
 rbenv install 2.5.3
 rbenv global 2.5.3
