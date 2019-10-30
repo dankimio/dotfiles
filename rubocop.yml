@@ -1,29 +1,22 @@
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
   Exclude:
     - bin/*
     - db/**/*
+    - config/**/*
 Layout/IndentHeredoc:
   Enabled: false
 Layout/MultilineMethodCallIndentation:
-  Enabled: false
-Lint/UnderscorePrefixedVariableName:
-  Enabled: false
+  EnforcedStyle: indented
 Metrics/LineLength:
   Max: 100
 Style/AsciiComments:
-  Enabled: false
-Style/ClassAndModuleChildren:
   Enabled: false
 Style/Documentation:
   Enabled: false
 Style/EmptyMethod:
   EnforcedStyle: expanded
 Style/FrozenStringLiteralComment:
-  Enabled: false
-Style/MutableConstant:
-  Enabled: false
-Style/NumericLiterals:
   Enabled: false
 Style/SingleLineBlockParams:
   Enabled: false
