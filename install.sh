@@ -11,9 +11,13 @@ done
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Ruby
-rbenv install 2.6.5
-rbenv global 2.6.5
+brew bundle
+
+# Install the latest Ruby version with rbenv
+rbenv install $(rbenv install -l | grep -v - | tail -1)
+rbenv global $(rbenv install -l | grep -v - | tail -1)
+
+bundle
 
 # Generate SSH key
 ssh-keygen -N ''
