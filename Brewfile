@@ -13,13 +13,15 @@ brew 'zsh'
 
 # Cask
 cask '1password'
-cask 'atom'
+cask 'anki'
 cask 'dash'
+cask 'discord'
+cask 'figma'
 cask 'firefox'
 cask 'gitup'
-cask 'google-chrome'
 cask 'iina'
 cask 'insomnia'
+cask 'mullvadvpn'
 cask 'paw'
 cask 'postgres'
 cask 'slack'
@@ -28,7 +30,7 @@ cask 'transmission'
 cask 'visual-studio-code'
 
 # Fonts
-tap 'caskroom/fonts'
+tap 'homebrew/cask-fonts'
 
 cask 'font-fira-mono'
 cask 'font-open-sans'
