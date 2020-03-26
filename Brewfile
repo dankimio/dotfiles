@@ -29,6 +29,10 @@ cask 'sublime-text'
 cask 'transmission'
 cask 'visual-studio-code'
 
+# Optional cask apps
+# cask 'anki'
+# cask 'omnidisksweeper'
+
 # Fonts
 tap 'homebrew/cask-fonts'
 
