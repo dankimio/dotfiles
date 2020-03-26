@@ -1,0 +1,20 @@
+{
+    "editor.fontSize": 15,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "eslint.run": "onSave",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "vetur.validation.style": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Atom One Light",
+    "workbench.enableExperiments": false,
+    "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "workbench.preferredLightColorTheme": "Atom One Light",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tips.enabled": false
+}
