@@ -10,14 +10,18 @@ done
 
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 brew bundle
 
 # Install the latest Ruby version with rbenv
 rbenv install $(rbenv install -l | grep -v - | tail -1)
 rbenv global $(rbenv install -l | grep -v - | tail -1)
-
 bundle
+
+# ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Pure prompt for ZSH
+npm install --global pure-prompt
 
 # Generate SSH key
 ssh-keygen -N ''
