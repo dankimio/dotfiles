@@ -3,12 +3,12 @@
 ## What's included
 
 - [Homebrew](https://brew.sh/)
-- Ruby 2.5 managed by [rbenv](https://github.com/rbenv/rbenv)
-- Gems for development: Rails, Jekyll, Bundler, etc.
+- Latest Ruby managed by [rbenv](https://github.com/rbenv/rbenv)
+- Gems for development: Rails, Bundler, CocoaPods, RuboCop, etc.
 - Zsh with [Prezto](https://github.com/sorin-ionescu/prezto)
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
-- Apps: [Atom](https://atom.io/), [Paw](https://paw.cloud/), [Postgres.app](https://postgresapp.com/), and many other (customize in `install.sh`)
-- [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts)
+- Apps: [Atom](https://atom.io/), [Paw](https://paw.cloud/), [Postgres.app](https://postgresapp.com/), and many other (customize in `Brewfile`)
+- [Homebrew Fonts](https://github.com/Homebrew/homebrew-cask-fonts)
 - SSH key generation
 
 ## Screenshot
@@ -28,5 +28,3 @@ cd ~/Developer/dotfiles
 # Install using the script
 ./install.sh
 ```
-
-Import Terminal.app theme in settings and set it as the default.
