@@ -118,3 +118,6 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export COCOAPODS_DISABLE_STATS=true
 
 export EDITOR="subl -w"
+
+# Custom aliases
+alias rg="rails generate"
