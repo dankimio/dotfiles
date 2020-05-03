@@ -1,0 +1,9 @@
+{
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.light.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Spacegray Light.sublime-theme",
+	"font_size": 17,
+}
