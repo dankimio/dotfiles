@@ -1,5 +1,6 @@
 AllCops:
-  TargetRubyVersion: 2.6
+  NewCops: disable
+  TargetRubyVersion: 2.7
   Exclude:
     - bin/*
     - db/**/*
@@ -8,7 +9,13 @@ Layout/LineLength:
   Max: 100
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 15
 Style/AsciiComments:
+  Enabled: false
+Style/ClassAndModuleChildren:
   Enabled: false
 Style/Documentation:
   Enabled: false
