@@ -8,6 +8,7 @@ for file in $files; do
   ln -s $dir/$file ~/.$file
 done
 
+# TODO: figure out Apple Silicon
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew bundle
