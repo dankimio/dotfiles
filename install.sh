@@ -21,8 +21,5 @@ bundle
 # ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Pure prompt for ZSH
-npm install --global pure-prompt
-
 # Generate SSH key
 ssh-keygen -N ''
