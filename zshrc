@@ -7,7 +7,7 @@ export ZSH="/Users/dan/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="refined"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -62,6 +62,8 @@ export ZSH="/Users/dan/.oh-my-zsh"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+ZSH_DISABLE_COMPFIX="true"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -72,8 +74,6 @@ plugins=(
   rails
   ruby
 )
-
-ZSH_DISABLE_COMPFIX="true"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,16 +103,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Prompt
-autoload -U promptinit; promptinit
-prompt pure
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-# OpenSSL
-export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # CocoaPods
 export COCOAPODS_DISABLE_STATS=true
@@ -121,3 +117,4 @@ export EDITOR="subl -w"
 
 # Custom aliases
 alias rg="rails generate"
+alias code="code-exploration"
