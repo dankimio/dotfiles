@@ -2,14 +2,15 @@
 	name = Dan Kim
 	email = itsdanya@gmail.com
 [core]
-	editor = "subl -w"
+	editor = "code -w"
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-	lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	aa = add --all
+	lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	pp = pull -p
+  br = branch
+  ci = commit
+  co = checkout
+  st = status
 [push]
 	default = simple
 [pull]
