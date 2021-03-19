@@ -113,8 +113,7 @@ eval "$(rbenv init -)"
 # CocoaPods
 export COCOAPODS_DISABLE_STATS=true
 
-export EDITOR="subl -w"
+export EDITOR="code -w"
 
 # Custom aliases
 alias rg="rails generate"
-alias code="code-exploration"
