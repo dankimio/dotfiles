@@ -13,6 +13,7 @@ brew 'zsh'
 
 # Cask
 cask '1password'
+cask 'aldente'
 cask 'anki'
 cask 'dash'
 cask 'discord'
@@ -29,6 +30,8 @@ cask 'transmission'
 cask 'visual-studio-code'
 
 # Optional cask apps
+# cask 'eloston-chromium'
+# cask 'fujifilm-x-raw-studio'
 # cask 'omnidisksweeper'
 
 # Fonts
@@ -36,6 +39,10 @@ tap 'homebrew/cask-fonts'
 brew 'svn'
 
 cask 'font-fira-mono'
+cask 'font-jetbrains-mono'
+cask 'font-noto-mono'
+cask 'font-noto-sans'
+cask 'font-noto-serif'
 cask 'font-open-sans'
 cask 'font-roboto-mono'
 cask 'font-roboto'
