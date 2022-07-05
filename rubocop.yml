@@ -4,7 +4,6 @@ AllCops:
   Exclude:
     - bin/*
     - db/**/*
-    - config/**/*
 Layout/LineLength:
   Max: 100
 Layout/MultilineMethodCallIndentation:
