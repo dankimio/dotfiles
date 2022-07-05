@@ -10,7 +10,7 @@ done
 
 # TODO: figure out Apple Silicon
 # Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle
 
 # Install the latest Ruby version with rbenv
