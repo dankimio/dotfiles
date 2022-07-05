@@ -31,7 +31,6 @@ cask 'transmission'
 cask 'visual-studio-code'
 
 # Optional cask apps
-# cask 'eloston-chromium'
 # cask 'fujifilm-x-raw-studio'
 # cask 'omnidisksweeper'
 
