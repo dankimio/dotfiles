@@ -8,10 +8,6 @@ Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Metrics/AbcSize:
   Enabled: false
-Metrics/MethodLength:
-  Max: 15
-Style/AsciiComments:
-  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/Documentation:
