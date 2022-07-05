@@ -1,4 +1,5 @@
 # Brew
+brew 'direnv'
 brew 'git'
 brew 'imagemagick'
 brew 'node'

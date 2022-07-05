@@ -117,3 +117,6 @@ export EDITOR="code -w"
 
 # Custom aliases
 alias rg="rails generate"
+
+# direnv
+eval "$(direnv hook zsh)"
