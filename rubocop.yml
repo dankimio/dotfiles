@@ -4,8 +4,6 @@ AllCops:
   Exclude:
     - bin/*
     - db/**/*
-Layout/LineLength:
-  Max: 100
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Metrics/AbcSize:
