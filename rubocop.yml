@@ -2,7 +2,6 @@ AllCops:
   NewCops: disable
   TargetRubyVersion: 3.0
   Exclude:
-    - bin/*
     - db/**/*
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
