@@ -2,6 +2,8 @@
 dir="$HOME/Developer/dotfiles"
 cd $dir
 
+rm -f ~/.zshrc
+
 files="gemrc gitconfig hushlogin irbrc rubocop.yml zshrc"
 for file in $files; do
   echo "Creating symlink to $file in home directory."
