@@ -121,3 +121,7 @@ alias rg="rails generate"
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# n
+export N_PREFIX="$HOME/.n"
+export PATH="$HOME/.n/bin:$PATH"
