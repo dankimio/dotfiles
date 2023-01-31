@@ -127,4 +127,4 @@ export N_PREFIX="$HOME/.n"
 export PATH="$HOME/.n/bin:$PATH"
 
 # git commit shortcut
-alias g='git add -A && git commit -m "`date`"'
+alias gx='git add -A && git commit -m "`date`"'
