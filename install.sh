@@ -10,7 +10,6 @@ for file in $files; do
   ln -s $dir/$file ~/.$file
 done
 
-# TODO: figure out Apple Silicon
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle
