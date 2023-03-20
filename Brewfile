@@ -1,8 +1,8 @@
 # Brew
+brew 'asdf'
 brew 'direnv'
 brew 'git'
 brew 'imagemagick'
-brew 'n'
 brew 'node'
 brew 'openssl'
 brew 'pnpm'

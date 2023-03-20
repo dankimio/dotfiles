@@ -70,6 +70,7 @@ ZSH_DISABLE_COMPFIX="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  asdf
   bundler
   git
   rails
@@ -118,10 +119,6 @@ export EDITOR="code -w"
 
 # Custom aliases
 alias rg="rails generate"
-
-# n
-export N_PREFIX="$HOME/.n"
-export PATH="$HOME/.n/bin:$PATH"
 
 # git commit shortcut
 alias gx='git add -A && git commit -m "`date`"'
