@@ -1,6 +1,5 @@
 # Brew
 brew 'asdf'
-brew 'direnv'
 brew 'git'
 brew 'imagemagick'
 brew 'node'
@@ -16,7 +15,6 @@ brew 'zsh'
 
 # Cask
 cask '1password'
-cask 'adguard'
 cask 'adobe-creative-cloud'
 cask 'aldente'
 cask 'anki'
