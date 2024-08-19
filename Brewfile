@@ -47,9 +47,6 @@ cask 'zed'
 # cask 'fujifilm-x-raw-studio'
 
 # Fonts
-tap 'homebrew/cask-fonts'
-brew 'svn'
-
 cask 'font-fira-mono'
 cask 'font-jetbrains-mono'
 cask 'font-noto-mono'
