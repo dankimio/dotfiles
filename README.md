@@ -4,10 +4,10 @@
 
 - [Homebrew](https://brew.sh/)
 - The latest Ruby managed by [rbenv](https://github.com/rbenv/rbenv)
-- Gems for development: Rails, Bundler, CocoaPods, RuboCop, etc.
+- Gems for development: Rails, Bundler, RuboCop, etc.
 - Zsh with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
-- Apps: [Visual Studio Code](https://code.visualstudio.com), [Paw](https://paw.cloud/), [Postgres.app](https://postgresapp.com/), and many other (customize in `Brewfile`)
+- Apps: [Visual Studio Code](https://code.visualstudio.com), [Postgres.app](https://postgresapp.com/), and many other (customize in `Brewfile`)
 - [Homebrew Fonts](https://github.com/Homebrew/homebrew-cask-fonts)
 - SSH key generation
 
