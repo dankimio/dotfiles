@@ -8,7 +8,7 @@
 - Zsh with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
 - Apps: [Visual Studio Code](https://code.visualstudio.com), [Postgres.app](https://postgresapp.com/), and many other (customize in `Brewfile`)
-- [Homebrew Fonts](https://github.com/Homebrew/homebrew-cask-fonts)
+- Homebrew Fonts
 - SSH key generation
 
 ## Screenshot
