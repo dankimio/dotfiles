@@ -12,6 +12,7 @@ done
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+exec $SHELL -l;
 brew bundle
 
 # Install the latest Ruby version with rbenv
