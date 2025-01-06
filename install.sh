@@ -8,7 +8,7 @@ RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/
 
 rm -f ~/.zshrc
 
-files="gemrc gitconfig hushlogin irbrc rubocop.yml zshrc"
+files="gemrc gitconfig gitignore hushlogin irbrc rubocop.yml zshrc"
 for file in $files; do
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file ~/.$file

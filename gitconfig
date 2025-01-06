@@ -2,7 +2,8 @@
 	name = Dan Kim
 	email = itsdanya@gmail.com
 [core]
-	editor = "code -w"
+	editor = "zed -w"
+	excludesFile = ~/.gitignore
 [alias]
 	aa = add --all
 	lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
