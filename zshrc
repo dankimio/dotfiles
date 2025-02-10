@@ -111,8 +111,8 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# CocoaPods
-export COCOAPODS_DISABLE_STATS=true
+# asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export EDITOR="zed -w"
 
@@ -121,5 +121,3 @@ alias rg="rails generate"
 
 # git commit shortcut
 alias gx='git add -A && git commit -m "`date`"'
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
