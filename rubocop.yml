@@ -1,6 +1,6 @@
 AllCops:
   NewCops: disable
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.4
   Exclude:
     - db/**/*
 Layout/MultilineMethodCallIndentation:
