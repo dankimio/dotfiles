@@ -1,5 +1,4 @@
 # Brew
-brew 'asdf'
 brew 'git'
 brew 'imagemagick'
 brew 'node'

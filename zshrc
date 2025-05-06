@@ -112,9 +112,6 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 export EDITOR="zed -w"
 
 # Custom aliases
