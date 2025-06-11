@@ -123,7 +123,5 @@ alias gx='git add -A && git commit -m "`date`"'
 # Postgres
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
+# uv
+. "$HOME/.local/bin/env"
