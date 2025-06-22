@@ -10,6 +10,8 @@ brew 'rbenv'
 brew 'redis'
 brew 'ssh-copy-id'
 brew 'yarn'
+brew 'yt-dlp'
+brew 'uv'
 brew 'zsh'
 
 # Cask
