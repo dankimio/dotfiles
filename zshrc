@@ -122,6 +122,3 @@ alias gx='git add -A && git commit -m "`date`"'
 
 # Postgres
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-# uv
-. "$HOME/.local/bin/env"
