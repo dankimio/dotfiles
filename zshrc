@@ -122,3 +122,6 @@ alias gx='git add -A && git commit -m "`date`"'
 
 # Postgres
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# mise
+eval "$(mise activate zsh)"

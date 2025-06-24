@@ -1,6 +1,7 @@
 # Brew
 brew 'git'
 brew 'imagemagick'
+brew 'mise'
 brew 'node'
 brew 'openssl'
 brew 'pnpm'
@@ -9,9 +10,9 @@ brew 'python'
 brew 'rbenv'
 brew 'redis'
 brew 'ssh-copy-id'
+brew 'uv'
 brew 'yarn'
 brew 'yt-dlp'
-brew 'uv'
 brew 'zsh'
 
 # Cask
