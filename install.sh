@@ -41,6 +41,10 @@ rbenv global "$latest"
 echo "  Installing gems..."
 bundle install
 
+# Node setup using mise
+echo "🌐 Setting up Node..."
+mise use --global node@lts
+
 # SSH key
 echo "🔑 Setting up SSH key..."
 ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
