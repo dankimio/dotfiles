@@ -4,12 +4,12 @@
 
 - [Homebrew](https://brew.sh/)
 - The latest Ruby managed by [rbenv](https://github.com/rbenv/rbenv)
-- Gems for development: Rails, Bundler, RuboCop, etc.
+- Gems for development: Ruby on Rails, Bundler, RuboCop, Ruby LSP, etc.
 - Zsh with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
-- Apps: [Visual Studio Code](https://code.visualstudio.com), [Postgres.app](https://postgresapp.com/), and many other (customize in `Brewfile`)
-- Homebrew Fonts
-- SSH key generation
+- Apps: 1Password, Figma, Firefox, GitUp, Google Chrome, IINA, Rectangle, SF Symbols, Spotify, Transmission, Zed, and many other (customize in `Brewfile`)
+- Homebrew Fonts: Fira Mono, Inter, Noto (Mono, Sans, Serif), etc. (customize in `Brewfile`)
+- SSH key generation (ed25519)
 
 ## Screenshot
 
