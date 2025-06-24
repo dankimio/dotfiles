@@ -34,7 +34,6 @@ cask 'rapidapi'
 cask 'rectangle'
 cask 'sf-symbols'
 cask 'spotify'
-cask 'sublime-text'
 cask 'transmission'
 cask 'zed'
 
