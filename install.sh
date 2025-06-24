@@ -38,6 +38,9 @@ echo "  Installing Ruby $latest..."
 rbenv install -s "$latest"
 rbenv global "$latest"
 
+# Initialize rbenv in current shell
+eval "$(rbenv init -)"
+
 echo "  Installing gems..."
 bundle install
 
