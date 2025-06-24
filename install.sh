@@ -52,6 +52,12 @@ bundle install
 echo "🌐 Setting up Node..."
 mise use --global node@lts
 
+# Reinitialize mise to ensure shell can find Node
+eval "$(mise activate bash)"
+
+echo "  Installing global npm packages..."
+npm install -g @antfu/ni git-delete-squashed
+
 # SSH key
 echo "🔑 Setting up SSH key..."
 ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
