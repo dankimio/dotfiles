@@ -43,6 +43,6 @@ bundle install
 
 # SSH key
 echo "🔑 Setting up SSH key..."
-ssh-keygen -t rsa -b 4096 -N '' -f ~/.ssh/id_rsa
+ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
 
 echo "✅ Dotfiles setup complete!"
