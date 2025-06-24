@@ -33,7 +33,7 @@ brew bundle
 
 # Ruby setup
 echo "💎 Setting up Ruby..."
-latest="$(rbenv install -l | grep -v '^-' | tail -1 | tr -d ' ')"
+latest="$(rbenv install -l | grep '^[0-9]' | tail -1 | tr -d ' ')"
 echo "  Installing Ruby $latest..."
 rbenv install -s "$latest"
 rbenv global "$latest"
