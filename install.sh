@@ -8,8 +8,12 @@ echo "🚀 Setting up dotfiles..."
 
 # ohmyzsh
 echo "📦 Installing Oh My Zsh..."
-rm -rf ~/.oh-my-zsh
-RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ ! -d ~/.oh-my-zsh ]; then
+  rm -rf ~/.oh-my-zsh
+  RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "  Oh My Zsh already installed, skipping..."
+fi
 
 rm -f ~/.zshrc
 
