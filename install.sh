@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Dotfiles
 dir="$(pwd)"
 cd "$dir"
-
-echo "🚀 Setting up dotfiles..."
 
 # ohmyzsh
 echo "📦 Installing Oh My Zsh..."
