@@ -1,34 +1,48 @@
+#!/bin/bash
+
 # Dotfiles
 dir="$HOME/Developer/dotfiles"
-cd $dir
+cd "$dir"
+
+echo "🚀 Setting up dotfiles..."
 
 # ohmyzsh
+echo "📦 Installing Oh My Zsh..."
 rm -rf ~/.oh-my-zsh
 RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 rm -f ~/.zshrc
 
+# Create symlinks
+echo "🔗 Creating symlinks..."
 files="gemrc gitconfig gitignore hushlogin irbrc rubocop.yml zshrc"
 for file in $files; do
-  echo "Creating symlink to $file in home directory."
-  ln -s $dir/$file ~/.$file
+  echo "  Creating symlink to $file"
+  ln -sf "$dir/$file" ~/.$file
 done
 
 # Homebrew
+echo "🍺 Setting up Homebrew..."
 if ! command -v brew >/dev/null 2>&1; then
-  /bin/bash -c \
-    "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo "  Installing Homebrew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# Make brew immediately available in this shell
-eval "$(/opt/homebrew/bin/brew shellenv)"
+echo "  Installing packages from Brewfile..."
 brew bundle
 
-# Install the latest Ruby version with rbenv
+# Ruby setup
+echo "💎 Setting up Ruby..."
 latest="$(rbenv install -l | grep -v '^-' | tail -1 | tr -d ' ')"
+echo "  Installing Ruby $latest..."
 rbenv install -s "$latest"
 rbenv global "$latest"
-bundle
 
-# Generate SSH key
-ssh-keygen -N ''
+echo "  Installing gems..."
+bundle install
+
+# SSH key
+echo "🔑 Setting up SSH key..."
+ssh-keygen -t rsa -b 4096 -N '' -f ~/.ssh/id_rsa
+
+echo "✅ Dotfiles setup complete!"
