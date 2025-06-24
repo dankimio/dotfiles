@@ -37,9 +37,6 @@ cask 'spotify'
 cask 'transmission'
 cask 'zed'
 
-# Optional cask apps
-# cask 'fujifilm-x-raw-studio'
-
 # Fonts
 cask 'font-fira-mono'
 cask 'font-inter'
