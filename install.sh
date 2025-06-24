@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Dotfiles
-dir="$HOME/Developer/dotfiles"
+dir="$(pwd)"
 cd "$dir"
 
 echo "🚀 Setting up dotfiles..."
