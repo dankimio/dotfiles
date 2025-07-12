@@ -116,6 +116,7 @@ export EDITOR="zed -w"
 
 # Custom aliases
 alias rg="rails generate"
+alias nu="nup"
 
 # git commit shortcut
 alias gx='git add -A && git commit -m "`date`"'
