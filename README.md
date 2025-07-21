@@ -3,7 +3,7 @@
 ## What's included
 
 - [Homebrew](https://brew.sh/)
-- The latest Ruby managed by [rbenv](https://github.com/rbenv/rbenv)
+- The latest Ruby, Node.js, and Python managed by [mise](https://github.com/jdx/mise)
 - Gems for development: Ruby on Rails, Bundler, RuboCop, Ruby LSP, etc.
 - Zsh with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id

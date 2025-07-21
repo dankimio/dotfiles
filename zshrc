@@ -108,10 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # Homebrew
 export PATH=/opt/homebrew/bin:$PATH
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 export EDITOR="zed -w"
 
 # Custom aliases

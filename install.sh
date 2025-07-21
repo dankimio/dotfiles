@@ -34,13 +34,10 @@ brew bundle
 
 # Ruby setup
 echo "💎 Setting up Ruby..."
-latest="$(rbenv install -l | grep '^[0-9]' | tail -1 | tr -d ' ')"
-echo "  Installing Ruby $latest..."
-rbenv install -s "$latest"
-rbenv global "$latest"
+mise use --global ruby@3
 
-# Initialize rbenv in current shell
-eval "$(rbenv init -)"
+# Reinitialize mise to ensure shell can find Ruby
+eval "$(mise activate bash)"
 
 echo "  Installing gems..."
 bundle install
