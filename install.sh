@@ -52,6 +52,13 @@ eval "$(mise activate bash)"
 echo "  Installing global npm packages..."
 npm install -g @antfu/ni git-delete-squashed
 
+# Python setup using mise
+echo "🐍 Setting up Python..."
+mise use --global python@3
+
+# Reinitialize mise to ensure shell can find Python
+eval "$(mise activate bash)"
+
 # SSH key
 echo "🔑 Setting up SSH key..."
 ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
