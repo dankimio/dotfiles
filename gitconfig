@@ -1,6 +1,6 @@
 [user]
 	name = Dan Kim
-	email = itsdanya@gmail.com
+	email = git@dan.kim
 [core]
 	editor = "zed -w"
 	excludesFile = ~/.gitignore
