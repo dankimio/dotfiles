@@ -71,7 +71,6 @@ ZSH_DISABLE_COMPFIX="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   bundler
-  dotenv
   git
   rails
   ruby
