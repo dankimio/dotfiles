@@ -26,6 +26,10 @@ for file in $files; do
   ln -sf "$dir/$file" ~/.$file
 done
 
+# Zed settings
+mkdir -p ~/.config/zed
+ln -sf "$dir/zed/settings.json" ~/.config/zed/settings.json
+
 # Homebrew
 echo "🍺 Setting up Homebrew..."
 if ! command -v brew >/dev/null 2>&1; then

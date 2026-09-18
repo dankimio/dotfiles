@@ -1,0 +1,124 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "auto_install_extensions": {
+    "dockerfile": true,
+    "html": true,
+    "ruby": true,
+    "toml": true,
+  },
+  "diff_view_style": "split",
+  "proxy": "",
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+    },
+  },
+  "outline_panel": {
+    "dock": "left",
+    "button": false,
+  },
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false,
+  },
+  "status_bar": {
+    "active_language_button": true,
+    "cursor_position_button": true,
+  },
+  "diagnostics": {
+    "button": false,
+  },
+  "search": {
+    "button": false,
+  },
+  "debugger": {
+    "button": false,
+  },
+  "title_bar": {
+    "show_branch_status_icon": true,
+    "show_user_picture": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "agent": {
+    "dock": "right",
+    "expand_terminal_card": false,
+    "play_sound_when_agent_done": "always",
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-5.2-codex",
+    },
+  },
+  "buffer_font_size": 16,
+  "tab_size": 2,
+  "soft_wrap": "editor_width",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false,
+  },
+  "terminal": {
+    "font_size": 15,
+  },
+  "languages": {
+    "JavaScript": {
+      "preferred_line_length": 100,
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
+      },
+    },
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "rubocop"],
+      "formatter": "language_server",
+    },
+    "HTML+ERB": {
+      "prettier": {
+        "allowed": false,
+      },
+      "language_servers": ["herb"],
+      "formatter": "language_server",
+    },
+  },
+  "lsp": {
+    "rubocop": {
+      "initialization_options": {
+        "safeAutocorrect": false,
+      },
+    },
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "diagnostics": false,
+        },
+      },
+      "settings": {
+        "use_bundler": false,
+      },
+    },
+  },
+}

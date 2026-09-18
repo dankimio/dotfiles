@@ -6,6 +6,7 @@
 - Ruby, Node.js LTS, and Python managed by [mise](https://github.com/jdx/mise)
 - Gems for development: Ruby on Rails, Bundler, RuboCop, Ruby LSP, etc.
 - Zsh with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+- Zed settings and automatic installation of extensions from `zed/settings.json`
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
 - Apps: 1Password, Figma, Firefox, GitUp, Google Chrome, IINA, Rectangle, SF Symbols, Spotify, Transmission, Zed, and many other (customize in `Brewfile`)
 - Homebrew Fonts: Fira Mono, Inter, Noto (Mono, Sans, Serif), etc. (customize in `Brewfile`)
