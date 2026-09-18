@@ -13,8 +13,6 @@
     "ruby": true,
     "toml": true,
   },
-  "diff_view_style": "split",
-  "proxy": "",
   "cli_default_open_behavior": "new_window",
   "project_panel": {
     "dock": "left",
@@ -35,10 +33,6 @@
     "dock": "left",
     "button": false,
   },
-  "status_bar": {
-    "active_language_button": true,
-    "cursor_position_button": true,
-  },
   "diagnostics": {
     "button": false,
   },
@@ -55,9 +49,6 @@
   "session": {
     "trust_all_worktrees": true,
   },
-  "prettier": {
-    "allowed": true,
-  },
   "agent": {
     "dock": "right",
     "expand_terminal_card": false,
@@ -70,11 +61,6 @@
   "buffer_font_size": 16,
   "tab_size": 2,
   "soft_wrap": "editor_width",
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark",
-  },
   "telemetry": {
     "metrics": false,
     "diagnostics": false,
@@ -85,12 +71,7 @@
   "languages": {
     "JavaScript": {
       "preferred_line_length": 100,
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"],
-        },
-      },
+      "formatter": "prettier",
     },
     "Ruby": {
       "language_servers": ["ruby-lsp", "rubocop"],
