@@ -8,8 +8,8 @@ brew 'mise'
 brew 'openssl'
 brew 'pngquant'
 brew 'pnpm'
-brew 'postgresql'
-brew 'redis'
+brew 'postgresql', restart_service: true
+brew 'redis', restart_service: true
 brew 'ssh-copy-id'
 brew 'uv'
 brew 'yarn'
