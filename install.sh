@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# -e: stop when a command fails instead of continuing with a broken setup.
+# -o pipefail: a pipeline fails if any command in it fails, not just the last one.
+set -eo pipefail
+
 dir="$(pwd)"
 cd "$dir"
 
@@ -28,6 +32,9 @@ if ! command -v brew >/dev/null 2>&1; then
   echo "  Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
+
+# Make Homebrew available in this script; Bash does not read our .zshrc.
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "  Installing packages from Brewfile..."
 brew bundle
@@ -61,6 +68,13 @@ eval "$(mise activate bash)"
 
 # SSH key
 echo "🔑 Setting up SSH key..."
-ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
+# Create the directory if missing.
+mkdir -p ~/.ssh
+# Allow only the owner to access the SSH directory.
+chmod 700 ~/.ssh
+# Keep the existing SSH key on reruns.
+if [ ! -e ~/.ssh/id_ed25519 ]; then
+  ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
+fi
 
 echo "✅ Dotfiles setup complete!"
