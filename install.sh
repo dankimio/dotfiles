@@ -39,32 +39,19 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 echo "  Installing packages from Brewfile..."
 brew bundle
 
-# Ruby setup
-echo "💎 Setting up Ruby..."
-mise use --global ruby@3
+# mise setup
+echo "🛠️ Setting up Ruby, Node.js, and Python..."
+# Use the version settings from dotfiles as the global mise configuration.
+mkdir -p ~/.config/mise
+ln -sf "$dir/mise.toml" ~/.config/mise/config.toml
+mise install
 
-# Reinitialize mise to ensure shell can find Ruby
-eval "$(mise activate bash)"
-
+# mise exec runs commands with the configured Ruby and Node.js versions.
 echo "  Installing gems..."
-bundle install
-
-# Node setup using mise
-echo "🌐 Setting up Node..."
-mise use --global node@lts
-
-# Reinitialize mise to ensure shell can find Node
-eval "$(mise activate bash)"
+mise exec -- bundle install
 
 echo "  Installing global npm packages..."
-npm install -g @antfu/ni git-delete-squashed
-
-# Python setup using mise
-echo "🐍 Setting up Python..."
-mise use --global python@3
-
-# Reinitialize mise to ensure shell can find Python
-eval "$(mise activate bash)"
+mise exec -- npm install -g @antfu/ni git-delete-squashed
 
 # SSH key
 echo "🔑 Setting up SSH key..."
