@@ -39,7 +39,6 @@ cask 'spotify'
 cask 'telegram'
 cask 'transmission'
 cask 'zed'
-cask 'zoom'
 
 # Fonts
 cask 'font-fira-mono'
