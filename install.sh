@@ -1,27 +1,21 @@
 #!/bin/bash
 
-# -e: stop when a command fails instead of continuing with a broken setup.
-# -o pipefail: a pipeline fails if any command in it fails, not just the last one.
-set -eo pipefail
+set -e
 
-dir="$(pwd)"
-cd "$dir"
+cd "$(dirname "$0")"
+dir="$PWD"
 
 # ohmyzsh
 echo "📦 Installing Oh My Zsh..."
 if [ ! -d ~/.oh-my-zsh ]; then
-  rm -rf ~/.oh-my-zsh
   RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
   echo "  Oh My Zsh already installed, skipping..."
 fi
 
-rm -f ~/.zshrc
-
 # Create symlinks
 echo "🔗 Creating symlinks..."
-files="gemrc gitconfig gitignore hushlogin irbrc rubocop.yml zshrc"
-for file in $files; do
+for file in gemrc gitconfig gitignore hushlogin irbrc rubocop.yml zshrc; do
   echo "  Creating symlink to $file"
   ln -sf "$dir/$file" ~/.$file
 done
