@@ -53,13 +53,6 @@ mise exec -- npm install -g @antfu/ni git-delete-squashed
 
 # SSH key
 echo "🔑 Setting up SSH key..."
-# Create the directory if missing.
-mkdir -p ~/.ssh
-# Allow only the owner to access the SSH directory.
-chmod 700 ~/.ssh
-# Keep the existing SSH key on reruns.
-if [ ! -e ~/.ssh/id_ed25519 ]; then
-  ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
-fi
+bash "$dir/restore-ssh-key.sh"
 
 echo "✅ Dotfiles setup complete!"

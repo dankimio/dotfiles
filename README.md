@@ -10,7 +10,7 @@
 - Common development dependencies: PostgreSQL, ImageMagick, ssh-copy-id
 - Apps: 1Password, Figma, Firefox, GitUp, Google Chrome, IINA, Rectangle, SF Symbols, Spotify, Transmission, Zed, and many other (customize in `Brewfile`)
 - Homebrew Fonts: Fira Mono, Inter, Noto (Mono, Sans, Serif), etc. (customize in `Brewfile`)
-- SSH key generation (ed25519)
+- SSH key restoration from Passwords (ed25519)
 
 ## Screenshot
 
@@ -31,4 +31,15 @@ cd ~/Developer/dotfiles
 
 # Install using the script
 ./install.sh
+```
+
+If `~/.ssh/id_ed25519` is missing, setup prompts you to paste your full OpenSSH
+private key from Passwords and press Enter. Input is hidden. The key must have no
+passphrase; setup validates it and recreates the public key before saving either
+file. Existing private keys are kept.
+
+You can also restore the key separately:
+
+```bash
+bash restore-ssh-key.sh
 ```
