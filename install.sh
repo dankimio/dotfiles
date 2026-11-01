@@ -35,7 +35,8 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "  Installing packages from Brewfile..."
-brew bundle
+HOMEBREW_CURLRC="$dir/brew.curlrc" HOMEBREW_CURL_RETRIES=1 \
+  brew bundle || echo "⚠️ Some Homebrew packages failed. Continuing setup; run brew bundle later to retry."
 
 # mise setup
 echo "🛠️ Setting up Ruby, Node.js, and Python..."
